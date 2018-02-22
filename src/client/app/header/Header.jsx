@@ -13,29 +13,36 @@ export class HeaderComponent extends React.Component {
   getListItems () {
     return [
       {
-        id: 'learn',
-        label: 'Learn',
-        path: ''
+        id: 'home',
+        label: 'Conduct',
+        path: '/'
       },
       {
-        id: 'blog',
-        label: 'Blog',
-        path: ''
+        id: 'learn',
+        label: 'Learn',
+        path: '/learn'
+      },
+      {
+        id: 'docs',
+        label: 'Docs',
+        path: '/docs'
       }
     ]
   }
 
   render () {
     return (
-      <div className={'header'}>
+      <header className={'header'}>
+        <nav>
           <ul>
             {(this.state.navItems || []).map(item =>
               (<li key={item.id} className={item.id}>
-                <Link to='/'>{item.label}</Link>
+                <Link to={item.path}>{item.label}</Link>
               </li>)
             )}
           </ul>
-      </div>
+        </nav>
+      </header>
     );
   }
 

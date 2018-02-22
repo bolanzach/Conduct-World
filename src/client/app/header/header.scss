@@ -2,7 +2,8 @@
 
 .header {
   width: 100%;
-  background-color: $header-background;
+  background-color: $dark-background;
+  height: $header-height;
 
   ul {
     list-style: none;

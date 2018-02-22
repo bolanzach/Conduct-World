@@ -1,0 +1,8 @@
+@import "../../theme.scss";
+
+.nav-panel {
+  background-color: $dark-background;
+  height: calc(100vh - #{$header-height});
+  position: fixed;
+  min-width: 200px;
+}
