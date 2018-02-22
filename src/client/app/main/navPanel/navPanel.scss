@@ -2,7 +2,7 @@
 
 .nav-panel {
   background-color: $dark-background;
-  height: calc(100vh - #{$header-height});
-  position: fixed;
-  min-width: 200px;
+  height: calc(100% - #{$header-height});
+  flex: 0 0 235px;
+
 }

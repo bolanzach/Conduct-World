@@ -1,8 +1,16 @@
+@import 'theme.scss';
 @import 'header/header.scss';
+@import 'main/main.scss';
 @import 'main/navPanel/navPanel.scss';
 
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
+  color: $main-font;
+  font-weight: 100;
 
+  h1 {
+    font-size: 2.5em;
+    margin-top: 50px;
+  }
 }

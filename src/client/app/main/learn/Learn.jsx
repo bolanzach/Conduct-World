@@ -6,9 +6,13 @@ export class LearnComponent extends React.Component {
 
   render () {
     return (
-      <div className={'learn'}>
-        <h1>GET LEARNED</h1>
+      <div className={'learn main-content'}>
         <NavPanelComponent/>
+        <div className={'doc-content'}>
+          <h1>Learn the Conduct Engine</h1>
+          <p>asdfasdf</p>
+          <h2>What is Conduct</h2>
+        </div>
       </div>
     );
   }

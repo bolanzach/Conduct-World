@@ -4,6 +4,7 @@
   width: 100%;
   background-color: $dark-background;
   height: $header-height;
+  line-height: $header-height;
 
   ul {
     list-style: none;
@@ -24,7 +25,8 @@
         display: block;
         color: #e2e2e2;
         text-decoration: none;
-        padding: 25px 15px;
+        padding: 0 15px;
+        transition: color 0.3s ease;
       }
     }
   }
